@@ -1,0 +1,26 @@
+--- HFBI-PB 101 Documentation ---
+To run:
+Open the .circ file in Logisim
+Set tick rate (Simulation) to 16hz
+Activate Simulation Enabled (Simulation)
+Activate Ticks Enabled (Simulation)
+Set tool to prod
+Use switches (pins) and button to control
+Components:
+1.  1-bit CPU for processing 
+	(16hz/0.02khz, HFBI-PB 100)
+2.  2 switches for input - one is 
+	main command/opcode and one is argument/operand
+	(in simulation, replaced with pins)
+3.  2 1-bit registers for storing data 
+	(in simulation, they are inside HFBI-PB 100)
+4.  2 pixel monitor/display, 1-bit color depth, 
+	connected to component 3 (in simulation, 
+	replaced with a pair of lightbulbs and 
+	connected to HFBI-PB 100 instead)
+Commands:
+Command 0 is "set the current focused register to the value specified 
+by the argument"
+Command 1 is "stop/start the updating of the part of the display 
+connected to the current focused register, and if the argument is 1, 
+after that switch the current focused register"
